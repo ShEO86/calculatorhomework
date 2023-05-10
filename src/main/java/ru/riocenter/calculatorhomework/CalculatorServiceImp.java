@@ -65,6 +65,7 @@ public class CalculatorServiceImp implements CalculatorService {
         if (num2 == 0) {
             return "Второе число не должно быть равно нулю";
         }
-        return num1 + " / " + num2 + " = " + (num1 / num2);
+        return String.format("%f / %f = %.2f", num1, num1, num1 / num2);
+//        return Double.toString(num1) + " / " + Double.toString(num2) + " = " + Double.toString(num1 / num2);
     }
 }
